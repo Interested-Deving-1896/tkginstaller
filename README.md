@@ -1,115 +1,75 @@
+[update-readmes]   Mode: rewrite — migrating to template structure...
+# tkginstaller
 
-<pre>
-░▀█▀░█░█░█▀▀░░░░░▀█▀░█▀█░█▀▀░▀█▀░█▀█░█░░░█░░░█▀▀░█▀▄
-░░█░░█▀▄░█░█░▄▄▄░░█░░█░█░▀▀█░░█░░█▀█░█░░░█░░░█▀▀░█▀▄
-░░▀░░▀░▀░▀▀▀░░░░░▀▀▀░▀░▀░▀▀▀░░▀░░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀░▀
-──  🐸  ──
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/tkginstaller)
 
-<strong>bash wrapper to build & install <a href="https://github.com/Frogging-Family">Frogging-Family</a> stuff with ease</strong>
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-   <a href="https://raw.githubusercontent.com/damachine/tkginstaller/master/tkginstaller"><img src="https://img.shields.io/badge/Version-0.40.6-yellow?style=flat&logo=linux"></a> <a href="https://aur.archlinux.org/packages/tkginstaller-git"><img src="https://img.shields.io/aur/version/tkginstaller-git?&logo=arch-linux&label=AUR"></a> <a href="https://github.com/search?q=org%3AFrogging-Family+author%3Adamachine&type=commits"><img src="https://img.shields.io/badge/Frogging--Family-Collaborator-green?style=flat&logo=github"></a>
-   
-<strong>what it does</strong>
- - quick CLI one-liners or full fzf <strong><mark>TUI</mark></strong> — your call
- - <strong><mark>customization.cfg</mark></strong> — peek it, load it, tweak it, diff it
- - optional staging forks added for <strong><a href="https://github.com/damachine/linux-tkg"><mark>linux-tkg</mark></a> & <a href="https://github.com/damachine/nvidia-all"><mark>nvidia-all</mark></a></strong> w/ extra spice
- - multi-distro support, restricted to supported tkg packages
-</pre>
+## Architecture
 
-<details>
-  <summary>Demo Video</summary>
-comming soon...
-</details>
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-<br />
+## Install
 
-##### INSTALLATION
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-```yaml
-# Arch Linux-based distributions
-# Install via AUR helper (recommended)
-yay -S tkginstaller-git
+```bash
+git clone https://github.com/Interested-Deving-1896/tkginstaller.git
+cd tkginstaller
 ```
 
-```yaml
-# All distributions
-# Install via automated installation helper
-curl -fsSL https://raw.githubusercontent.com/damachine/tkginstaller/master/install.sh | bash
+## Usage
+
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
+
+## Configuration
+
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
+
+## CI
+
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
+
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/tkginstaller`](https://github.com/Interested-Deving-1896/tkginstaller) and mirrored through:
+
+```
+Interested-Deving-1896/tkginstaller  ──►  OpenOS-Project-OSP/tkginstaller  ──►  OpenOS-Project-Ecosystem-OOC/tkginstaller
 ```
 
-<br />
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
 
-##### USAGE
+## Contributors
 
-```yaml
-# Use fzf-finder TUI mode, simply run
-tkginstaller
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
 
-# Use direct one-liner CLI mode (skip TUI), run with arguments
-tkginstaller [package]
-# e.g
-tkginstaller linux          # or shortcut
-tkginstaller nvidia
-tkginstaller linux-nvidia   # or shortcut ln
+## Origins
 
-# Edit a package's configuration file
-tkginstaller [config] [package]
-# e.g
-tkginstaller config         # Enter fzf-finder TUI to select package
-tkginstaller config linux   # or shortcut
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
 
-# Clean up all temporary files
-tkginstaller clean
+## Resources
 
-# Show help
-tkginstaller help
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
 
-# To see all available options and shortcuts run:
-# h, --help, -h
-```
+## License
 
-<br />
-
-##### UNINSTALL
-
-<details>
-  <summary>Expand</summary>
-
-```yaml
-# Arch Linux-based distributions (AUR)
-yay -R tkginstaller-git
-```
-
-```yaml
-# All distributions (installed via install.sh)
-# Use the built-in uninstall function
-curl -fsSL https://raw.githubusercontent.com/damachine/tkginstaller/master/install.sh | bash -s -- --uninstall
-
-# Or if you have the install.sh downloaded
-./install.sh --uninstall
-```
-
-```yaml
-# All distributions (manual cleanup)
-# Manually remove all files
-rm /patch/to/tkginstaller     # where you put it
-rm -rf ~/.tkginstaller        # cache folder
-# Remove alias from shell config
-sed -i '/# TKG-Installer alias/,+1d' ~/.bashrc ~/.zshrc
-source ~/.bashrc ~/.zshrc
-```
-
-</details>
-
-<br />
-
-###### DISCLAIMER
-
-<pre>
-This tool is released under the MIT license.
-
-<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg"></a>
-  
-Individual TKG/Frogminer packages have their own licenses:
- - See respective repositories at <a href="https://github.com/Frogging-Family">Frogging-Family</a>
-</pre>
+<!-- AI:start:license -->
+[MIT](https://github.com/Interested-Deving-1896/tkginstaller/blob/master/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
